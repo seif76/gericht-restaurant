@@ -1,0 +1,70 @@
+.aboutUs{
+  position: relative;
+}
+.aboutUs-overlay{
+  position: absolute;
+  inset: 0;
+}
+.aboutUs-overlay img{
+  width: 391px;
+  height: 415px;
+  z-index: 0;
+}
+.aboutUs-content{
+  z-index: 2;
+  width: 100%;
+}
+.aboutUs-content-about{
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+
+}
+.aboutUs-content-about p{
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+.aboutUs-content-knife{
+  margin: 2rem 4rem;
+}
+.aboutUs-content-knife img{
+  height: 910px;
+}
+.aboutUs-content-history{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.aboutUs-content-history p{
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+@media  screen and (max-width:2000px) {
+  .aboutUs-content-knife img{
+    height: 1110px;
+  }
+  .aboutUs-content-history p,
+  .aboutUs-content-about p{
+    margin: 4rem 0;
+
+  }
+}
+
+
+@media  screen and (max-width:900px) {
+  .aboutUs-content{
+    flex-direction: column;
+  }
+  .aboutUs-content-knife {
+    margin: 4rem 0;
+  }
+}
+@media  screen and (max-width:650px) {
+  .aboutUs-overlay img{
+    width: 80%;
+    height: 320px;
+
+  }
+}
